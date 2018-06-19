@@ -1,0 +1,28 @@
+/** ID Selectors**/
+
+#main-header {
+    background-color: orange;
+    color: white;
+}
+
+#macro-button {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+#ratio-preset-button {
+    background-color: blue;
+    color: white;
+}
+
+
+/** Class Selectors**/
+.divider,
+th:not(:last-child) {
+    border-bottom: 1px solid grey;
+}
+
+/** HTML Selectors**/
+table {
+    border: 1px solid grey;
+}

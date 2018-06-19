@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The MacroNutrient Calculator</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="main-header">The MacroNutrient Calculator</h1>
+        </header>
+        <main>
+            <form>
+                <h2 class="divider">Step 1 - Enter Daily Calories</h2>
+                <button id="macro-button">Share Your Macros</button>
+                <input type="number" id="daily_calories" name="enter_daily_calories">
+                <p>If you don't know your daily calorie needs, <a href"#">calculate them now by clicking here.</a></p>
+
+                <h2 class="divider">Step 2 - Adjust Ratios</h2>
+                <button id="ratio-preset-button">Ratio Presets</button>
+
+                <table style="width:90%">
+                    <tr class="table-row">
+                        <th> </th>
+                        <th> </th>
+                        <th style="display:none">Grams Per Meal</th>
+                        <th>Grams Per Day</th>
+                    </tr>
+
+                    <tr class="table-row">
+                        <th>Carbs</th>
+                        <th colspan="2">Percentage</th>
+                        <th>-</th>
+                    </tr>
+                    <tr class="slidecontainer">
+                        <th></th>
+                        <th colspan="2">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </th>
+                        <th></th>
+                    </tr>
+
+                    <tr class="table-row">
+                            <th>Protein</th>
+                            <th colspan="2">Percentage</th>
+                            <th>-</th>
+                        </tr>
+                        <tr class="slidecontainer">
+                            <th></th>
+                            <th colspan="2">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </th>
+                            <th></th>
+                        </tr>
+
+                    <tr class="table-row">
+                            <th>Fat</th>
+                            <th colspan="2">Percentage</th>
+                            <th>-</th>
+                        </tr>
+                        <tr class="slidecontainer">
+                            <th></th>
+                            <th colspan="2">
+                                <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                            </th>
+                            <th></th>
+                        </tr>
+
+                    <tr class="table-row">
+                            <th>Total Percentage</th>
+                            <th> </th>
+                            <th><input type="checkbox">Show Grams per Meal</th>
+                            <th> </th>
+                        </tr>
+                </table>
+            </form>
+        </main>
+    </body>
+</html>
